@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    ports:
+      - "6001:6001"  # Map port 5000 on the host to port 5000 in the container
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
+    depends_on:
+      - db  # You can add any other services if needed like a database
