@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #008080;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+        .intro {
+            font-size: 1.5em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #008080;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #004d40;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Exciting Home Page!</h1>
+    <p class="intro">Click on the buttons below to explore more:</p>
+    
+    <div class="btn-container">
+        <a href="/public"><button class="btn">Public Page</button></a>
+        <a href="/protected"><button class="btn">Protected Page</button></a>
+    </div>
+</body>
+</html>
